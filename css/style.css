@@ -8,17 +8,132 @@ html,body{
 }
 body{
 	font-family: 'Roboto', sans-serif;
+	font-size:15px;
 }
 header{
-	padding:30px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 p{
 	color:#888888;
+}
+.team-single img{
+ display: block;
+   height: auto;
+	 width: 100%;
+}
+.team-details{
+	text-align:center;
+	background-color: #fff;
+    -webkit-box-shadow: 0 5px 15px #f0f0f0;
+    box-shadow: 0 5px 15px #f0f0f0;
+      padding: 20px;
+    position: relative;
+    transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+    
+}
+.team-details h6{
+font-family: 'Rufina', serif;
+	font-weight:bold;
+	color:#1e2528;
+font-size:22px;
+margin-bottom: 0px;
+}
+.team-single .team-social{
+	margin-top:-30px;
+	display:none;
+
+}
+.testimonial{
+	text-align:center;
+}
+.testimonial .quote{
+	margin: 0 auto 45px;
+    width: 60px;
+}
+.testi-content{
+	
+    font-family: "Rufina", serif;
+    font-size: 18px;
+	line-height: 30px;
+	color: #263a41;
+	  margin-bottom: 40px;
+    font-weight: 500;
+}
+.testi-details p {
+    font-size: 22px;
+	font-family: "Rufina", serif;
+    margin-top:20px;
+	line-height: 30px;
+	color: #263a41;
+	  margin-bottom: 40px;
+    font-weight: 500;
+    
+}
+.carousel-indicators li{
+    border-top: 1px solid #ff817e;
+    border-bottom: 12px solid transparent;
+    width: 15px;
+    height: 2px;
+    border-radius: 50%;
+     
+    background: #ff817e;
+	
+}
+.testi-details span{
+	font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.team-single:hover .team-details{
+	margin: -40px auto 0;
+}
+.team-single:hover .team-social{
+	display:block;
+	margin-top:10px;
+	
+}
+.team-social a{
+	border: 1px solid #30383b;
+    padding: 6px;
+    border-radius: 50%;
+    color: #1e2528;
+    height: 40px;
+    width: 40px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+  
+}
+.team-social a:hover{
+	background-color: #ff817e;
 }
 .nav-row{
     align-items: center;
 
     margin: 0 auto;	
+}
+.appointment-wrapper{
+	display:flex;
+	flex-wrap:wrap;
+}
+.app-img {
+    width: 40%;
+    height: 450px;
+}
+.app-img img{
+	    width: 100%;
+    height: inherit;
+}
+.appointment-form .form-field {
+	width: 100%;
+    position: relative;
+    
 }
 #blog-footer{
 	
@@ -27,7 +142,7 @@ p{
 
 }
 .banner-content-wrapper{
-	margin-top: 10%;
+	
     margin-left: 12%;
 }
 #banner .section-title{
@@ -46,15 +161,13 @@ p{
 	color:#1e2528;
 	line-height: 75px;
 }
-#banner .section-content{
+#banner .section-content, .team-details span{
 	font-size:15px;
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
 	margin-bottom: 50px;
-
-
-
-	line-height: 27px;
+    line-height: 27px;
+	color:#888888;
 }
 .nav-item{
 	    padding: 0px 15px;
@@ -65,8 +178,8 @@ p{
 	max-height:150px;
 	padding: 0;
 }
-.navbar-toggler-icon{
-	
+.navbar-toggler{
+	display:none;
 }
 .navbar-nav>li>a {
     padding-top: 10px;
@@ -79,9 +192,11 @@ p{
 }
 section{
 	margin-bottom:130px;
+	position: relative;
 }
 #banner{
 	position:relative;
+	margin-top: 12%;
 	}
 .banner-img-wrapper{
 	position: absolute;
@@ -89,8 +204,7 @@ section{
     left: -80px;
 }
 .banner-img{
-	width: 250px;
-    height: 325px;
+	
     transform: rotate(-15deg);
 }
 .navbar-brand>img{
@@ -148,6 +262,12 @@ section{
 	font-weight:bold;
 	color:#fff;
 	line-height: 40px;
+}
+.blog-date{
+	    font-size: 12px;
+    color: #888888;
+    font-family:'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 .vdo-btn i{
 	    background-color: #fcf5ee;
@@ -264,7 +384,7 @@ section{
 	color: #888;
     
 }
-#about .section-subtitle, #service .section-subtitle, #blog .section-subtitle, #team .section-subtitle{
+#about .section-subtitle, #service .section-subtitle, #blog .section-subtitle, #team .section-subtitle, #contact .section-subtitle{
 	font-size: 42px;
     margin-bottom: 30px;
 	font-family: 'Rufina', serif;
@@ -273,7 +393,7 @@ section{
 	margin-top: 26px;
 	
 }
-#about .section-content, #service .section-content,#blog .section-content, #team p{
+#about .section-content, #service .section-content,#blog .section-content, #team p, #contact .section-content{
 	margin-bottom:60px;
 	line-height: 27px;
 }
@@ -288,6 +408,90 @@ section{
     font-size: 22px;
 	font-family: 'Rufina', serif;
 	font-weight:bold;
+	margin-top: 10px;
+}
+.appointment-form{
+	width:60%;
+	padding: 20px 50px;
+	margin: 0 auto;
+}
+.form-field input, select{
+	    background-color: transparent;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #999999;
+    color: #999999;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    width: 49%;
+	text-transform: uppercase;
+}
+.appointment-form button, #contact button{
+	    margin-top: 40px;
+    font-size: 14px;
+}
+.select-field{
+	width:49%;
+}
+select,#contact input{
+	width:100%;
+}
+.contact-row{
+	   
+}
+textarea{
+	    width: 100%;
+    height: 100px;
+	    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+ul{
+	list-style:none;
+}
+.about-flower{
+	    position: absolute;
+   
+}
+.red{
+	 left: 15%;
+}
+.pink{
+	right:5%;
+	top:60%;
+}
+.about-img{
+	    display: block;
+    margin: 70px auto 30px;
+}
+.contact-details li{
+	display: flex;
+         padding: 20px 0px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.contact-details i{
+	width:30px;
+	height:30px;
+	background:#ff817e;
+	border-radius:50%;
+	color:#fff;
+	padding: 8px 8px;
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: 200;
+}
+.contact-info{
+	    font-size: 14px;
+    color: #888888;
+    font-family:'Roboto', sans-serif;
+    text-transform: uppercase;
+	 margin-left: 20px; 
+}
+#contact .btn-rounded{
+	padding:10px 12px;
 }
 .card:hover{
 	-webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.75);
@@ -308,12 +512,81 @@ box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.75);
 	.card{
 		width:30%;
 	}
+	
 }
+	.navbar-toggler-icon{
+	color: #ff817e!important;
+	font-size:18px!important;
+	}
 @media only screen and (max-width: 767px){
 	.card{
 		width:100%;
 	}
+	.banner-content-wrapper{
+		margin-top:50px;
+	}
+	.contact-details li{
+		    text-align: center;
+    margin: 0 auto;
+    display: block;
+	}
+	.navbar-nav{
+			display: block;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background: #ebebeb;
+    width: 300px;
+    text-align: center;
+	}
+	.navbar-toggler{
+		display:block!important;
+		
+  
+    position: absolute;
+    right: 0;
+    top: 50px;
+	}
+	.collapse:not(.show) {
+    display: none!important;
 }
-@media only screen and (min-width: 1200px){
-
+	
+}
+@media only screen and (max-width: 599px){
+.banner-img{
+	display:none;
+}
+}
+@media only screen and (min-width: 920px){
+.banner-img{
+	width: 250px;
+    height: 325px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 900px){
+	.banner-content-wrapper{
+		margin-top:50px;
+	}
+}
+@media only screen and (min-width: 660px) and (max-width: 919px){
+.banner-img{
+	width: 200px;
+    height: 340px;
+}
+}
+@media screen and (min-width: 380px){
+.appointment-form .form-field {
+  
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+   
+    justify-content: space-between;
+}
+}
+@media screen and (max-width: 1200px) {
+  .app-img {
+    display: none;
+  }
 }
