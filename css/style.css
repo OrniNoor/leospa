@@ -15,6 +15,11 @@ header{
 p{
 	color:#888888;
 }
+.nav-row{
+    align-items: center;
+
+    margin: 0 auto;	
+}
 #blog-footer{
 	
     background-color: #fff9f8;
@@ -45,7 +50,10 @@ p{
 	font-size:15px;
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
-	
+	margin-bottom: 50px;
+
+
+
 	line-height: 27px;
 }
 .nav-item{
@@ -127,6 +135,10 @@ section{
     -moz-box-sizing:border-box;
     box-sizing:border-box;
 } 
+#team .section-title-wrapper{
+	margin:0 auto;
+	text-align: center;
+}
 
 .feature-content-wrapper{
 	margin:0 auto;
@@ -137,10 +149,32 @@ section{
 	color:#fff;
 	line-height: 40px;
 }
+.vdo-btn i{
+	    background-color: #fcf5ee;
+    color: #ff817e;
+     height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+	    margin-left: 15px;
+   
+}
+.vdo-btn{
+	color: #888888;
+    font-size: 14px;
+    
+}
 .btn{
-	font-size:11px;
+	font-size:16px;
 	font-family:'Roboto', sans-serif;
 	text-transform:uppercase;
+	border-radius:0;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    min-width: 150px;
+    padding: 15px 12px;
 }
 .btn-primary{
 	background:#ff817e;
@@ -152,8 +186,11 @@ section{
     border-color: #30383b;
 }
 .btn-rounded{
-	border-radius:20px;
-	padding:8px 25px;
+	border-radius: 50px;
+    padding: 15px 12px;
+
+
+
 }
 .btn-dark{
 	background:#30383b;
@@ -174,6 +211,7 @@ section{
 .card-content{
 	font-size:14px;
 	line-height:27px;
+	margin-bottom: 40px;
 }
 #service .card-title{
 	font-size:22px;
@@ -216,6 +254,45 @@ section{
 }
 #blog-footer .copyright a {
     color: #ff817e;
+}
+#about .section-title{
+	font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+	color: #888;
+    
+}
+#about .section-subtitle, #service .section-subtitle, #blog .section-subtitle, #team .section-subtitle{
+	font-size: 42px;
+    margin-bottom: 30px;
+	font-family: 'Rufina', serif;
+	font-weight:bold;
+	color:#1e2528;
+	margin-top: 26px;
+	
+}
+#about .section-content, #service .section-content,#blog .section-content, #team p{
+	margin-bottom:60px;
+	line-height: 27px;
+}
+#feature .section-content{
+	color: #fff;
+    font-family: "Rufina", serif;
+    font-weight: bold;
+	font-size:14px;
+}
+#blog .card-title{
+	color: #263a41;
+    font-size: 22px;
+	font-family: 'Rufina', serif;
+	font-weight:bold;
+}
+.card:hover{
+	-webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.75);
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
 	
